@@ -13,7 +13,6 @@ elif [[ "$1" != '' ]]; then
         eksctl delete cluster --name ${2} --region us-west-2
         exit 1
     else
-        echo "Standin for create Cluster and check cluster health here"
         eksctl create cluster \
         --name "${arg,,}" \
         --region us-west-2 \
